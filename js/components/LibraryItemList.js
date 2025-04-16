@@ -39,7 +39,7 @@ const LibraryItemList = {
   template: `
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
         <div class="col" v-for="item in libraryIn">
-          <library-item-card :item="item" @remove="library.remove(item)">
+          <library-item-card :item="item" @remove="libraryIn.remove(item)">
             <component :is="item.constructor.type + 'Details'" 
                        :item="item"></component>
 

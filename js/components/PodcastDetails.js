@@ -1,10 +1,10 @@
-import {Book, LibraryItem, Movie} from "../models.js";
+import {Book, LibraryItem, Podcast} from "../models.js";
 import LibraryItemCard from "./LibraryItemCard.js";
 const PodcastDetails = {
     name: 'PodcastDetails',
     props: {
         item: {
-            type: Movie,
+            type: Podcast,
             required: true
         }
     },
