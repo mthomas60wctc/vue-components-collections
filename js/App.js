@@ -24,7 +24,7 @@ const App = {
     template: `
         <div>
             <search-field @searched = "(s) => populateList( s )"></search-field>
-            <library-item-list :libraryIn=library></library-item-list>
+            <library-item-list :library=library></library-item-list>
         </div>
     `
 };
